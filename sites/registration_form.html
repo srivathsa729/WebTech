@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Course Registration Form</title>
+</head>
+<style>
+  input, option, label, select{
+    background-color: lightblue;
+  }
+</style>
+
+<body style="text-align: center;background-color:lightblue">
+    <img src="National_Institute_of_Technology,_Warangal_logo.png" alt=""> <br> <br>
+    <h1>NATIONAL INSTITUTE OF TECHNOLOFY WARANGAL</h1>
+    <h2>(An Institute of National Importance)</h2>
+    <h3 style="font-size: 27px;">Department of Electronics and Communication Engineering</h3>
+    <fieldset>
+        <legend style="font-size: 25px;"><strong>Course Registration From for Btech 3rd year Students</strong></legend>
+
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+            <br>
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+            <br> <br>
+            <label for="rgno" style="padding: 5px;">Reg Number:</label>
+            <input type=" text" id="rgno">
+            <label for="rno" style="padding: 5px;">Roll Number:</label> <input type="text" id="rno">
+            <br><br>
+            <label for="tele">Mobile Number</label>
+            <input type="tel" name="tele" id="tele" placeholder="Ex : +91 9010010507">
+            <br><br>
+            <label for="eml">Email Id:</label>
+            <input type="email" name="eml" id="eml" placeholder="John@gmail.com">
+            <br><br>
+            <fieldset>
+                <legend>Check all the subjects that you want to register for</legend>
+                <br>
+                <input type="checkbox" name="CS" id="CS">
+                <label for="CS">Communication Systems</label>
+                <br><br>
+                <input type="checkbox" name="ITC" id="ITC">
+                <label for="ITC">Information Technology and Coding</label>
+                <br><br>
+                <input type="checkbox" name="DN" id="DN">
+                <label for="DN">Data Networks</label>
+                <br><br>
+                <input type="checkbox" name="DSP" id="DSP">
+                <label for="DSP">Digital Signal Processing</label>
+                <br><br>
+                <input type="checkbox" name="ES" id="ES">
+                <label for="ES">Embedded Systems</label>
+                <br><br>
+                <input type="checkbox" name="DSD" id="DSD">
+                <label for="DSD ">Digital Systems Design</label>
+                <br><br>
+                <input type="checkbox" name="MC" id="MC">
+                <label for="MC">Micro Controllers</label>
+                <br><br>
+                <input type="checkbox" name="AP" id="AP">
+                <label for="AP ">Antenna Propagation</label>
+            </fieldset>
+            <br><br>
+            <label for="oe">Opt for an Open Elective</label>
+            <select name="oe" id="oe">
+            <option value="Oops">Oops</option>
+            <option value="Soft Skills">Soft Skills</option>
+            <option value="Maths">Maths</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+        </select>
+            <br><br>
+            <p>Select a Department Elective you are interested in</p>
+            <input type="radio" name="de" id="de1">
+            <label for="de1">Web Technologies</label>
+            <input type="radio" name="de" id="de2">
+            <label for="de2">Low Power VLSI</label>
+            <br><br>
+            <input type="Submit" name="smt" id="smt" value="Register">
+            <input type="Reset">
+        </form>
+    </fieldset>
+</body>
+
+</html>
