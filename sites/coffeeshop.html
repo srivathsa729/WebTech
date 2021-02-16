@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        /* Header/Blog Title */
+        
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        
+        .header h1 {
+            font-size: 50px;
+        }
+        /* Style the top navigation bar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the topnav links */
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change color on hover */
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        
+        .leftcolumn {
+            float: left;
+            width: 33.3%;
+        }
+        
+        .centercolumn {
+            float: left;
+            width: 33.3%;
+            padding-left: 20px;
+        }
+        /* Right column */
+        
+        .rightcolumn {
+            float: left;
+            width: 33.3%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        /* Fake image */
+        
+        .fakeimg,
+        img {
+            width: 100%;
+            padding: 20px;
+        }
+        /* Add a card effect for articles */
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn,
+            .centercolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Coffee Shop</h1>
+        <p>Coffee Drinks available in Our Shop.</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">My Account</a>
+        <a href="#" style="float:right">My Cart</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Espresso</h2>
+                <img src="https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_espresso.jpg" width=200px height=200px>
+
+                <p>The espresso, also known as a short black, is approximately 1 oz. of highly concentrated coffee. Although simple in appearance, it can be difficult to master. The espresso, also known as a short black, is approximately 1 oz. It can be
+                    difficult to master.</p>
+            </div>
+
+        </div>
+        <div class="centercolumn">
+            <div class="card">
+                <h2>Americanos</h2>
+                <img src="https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_americano.jpg" width=200px height=200px>
+
+                <p>Americanos are popular breakfast drinks and thought to have originated during World War II. Soldiers would add water to their coffee to extend their rations farther. The water dilutes the espresso while still maintaining a high level of
+                    caffeine.</p>
+            </div>
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Macchiato</h2>
+
+                <img src="https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_macchiato.jpg" width=200px height=200px>
+
+
+                <p>The word “macchiato” means mark or stain. This is in reference to the mark that steamed milk leaves on the surface of the espresso as it is dashed into the drink. Flavoring syrups are often added to the drink according to customer preference.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Have a nice day!</h2>
+    </div>
+
+</body>
+
+</html>
